@@ -258,7 +258,7 @@ jobs:
           exit 1
 
   notify-success:
-    needs: [validate-paths, sync-backend, sync-frontend]
+    needs: [validate-paths, sync-backend]
     runs-on: ubuntu-latest
     if: success()
     steps:
@@ -271,7 +271,7 @@ jobs:
           echo "📤 Frontend: Synced to LAD-Frontend/sdk/features/voice-agent"
 
   notify-failure:
-    needs: [validate-paths, sync-backend, sync-frontend]
+    needs: [validate-paths, sync-backend]
     runs-on: ubuntu-latest
     if: failure()
     steps:
