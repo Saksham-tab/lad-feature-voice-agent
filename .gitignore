@@ -29,7 +29,12 @@ Thumbs.db
 lad-sandbox/
 lad-sandbox/**
 
-backend/features/voice-agent/secrets/
+
+
+# Secrets (NEVER commit)
+secrets/
+backend/secrets/
+**/secrets/
 
 # Temporary standalone testing folders (NEVER commit)
 temp-standalone/
